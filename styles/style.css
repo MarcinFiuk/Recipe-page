@@ -142,7 +142,7 @@ header + .wrapper {
 }
 
 .recipe {
-  width: clamp(23.5rem, 9.112rem + 61.224vw, 46rem);
+  width: clamp(23.5rem, calc(9.112rem + 61.224vw), 46rem);
   background-color: var(--section-background);
 
   @media (min-width: 48rem) {
@@ -151,7 +151,7 @@ header + .wrapper {
 }
 
 .recipe__title {
-  font-size: clamp(var(--f-2xl), 2.02rem + 1.021vw, var(--f-3xl));
+  font-size: clamp(var(--f-2xl), calc(2.02rem + 1.021vw), var(--f-3xl));
   color: var(--text-card-heading);
 }
 
