@@ -178,9 +178,9 @@ header + .wrapper {
   }
 
   li {
+    margin-block-start: var(--s-100);
     padding-inline-start: var(--s-350);
     color: var(--card-list-color);
-    margin-block-start: var(--s-100);
   }
 
   li:first-child {
@@ -211,8 +211,8 @@ header + .wrapper {
   }
 
   li {
-    padding-inline-start: var(--s-200);
     margin-block-start: var(--s-100);
+    padding-inline-start: var(--s-200);
   }
 
   li:first-of-type {
