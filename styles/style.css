@@ -63,6 +63,11 @@
   --separator-color: var(--c-stone-150);
 
   /* fonts */
+  --font-body: "Outfit", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --font-heading: "Young Serif", "Times New Roman", Times, serif;
+
+  /* fonts size */
   --f-3xl: 2.5rem;
   --f-2xl: 2.25rem;
   --f-xl: 1.75rem;
@@ -84,22 +89,21 @@
 
 body {
   background-color: var(--body-background);
-  font-family: "Outfit", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: var(--font-body);
   font-weight: 400;
   font-size: var(--f-regular);
   color: var(--text-color);
   display: grid;
   place-items: center;
 
-  @media (width>=48rem) {
+  @media (min-width: 48rem) {
     padding-block: var(--s-1600);
   }
 }
 
 h1,
 h2 {
-  font-family: "Young Serif", "Times New Roman", Times, serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   line-height: 1;
 }
@@ -111,13 +115,13 @@ strong {
 .wrapper {
   padding-inline: var(--s-400);
 
-  @media (width>=48rem) {
+  @media (min-width: 48rem) {
     padding-inline: var(--s-500);
   }
 }
 
 .recipe__image-wrapper {
-  @media (width>=48rem) {
+  @media (min-width: 48rem) {
     padding-inline: var(--s-500);
     padding-block-start: var(--s-500);
 
@@ -141,7 +145,7 @@ header + .wrapper {
   width: clamp(23.5rem, 9.112rem + 61.224vw, 46rem);
   background-color: var(--section-background);
 
-  @media (width>=48rem) {
+  @media (min-width: 48rem) {
     border-radius: 1.5em;
   }
 }
